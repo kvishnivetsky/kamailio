@@ -755,6 +755,11 @@ modparam("registrar", "xavp_cfg", "reg")
 		</listitem>
 		<listitem>
 			<para>
+				<emphasis>expires</emphasis> - the record's expires value.
+			</para>
+		</listitem>
+		<listitem>
+			<para>
 				<emphasis>received</emphasis> - the record's received value.
 			</para>
 		</listitem>
@@ -972,6 +977,13 @@ modparam("registrar", "flow_timer", 25)
 					contact per AoR. If there are other contact addresses for
 					AoR not matching current registration, remove them.
 					This mode ensures one contact per AoR (user).</para>
+				</listitem>
+				<listitem>
+					<para><emphasis>0x08</emphasis> - Do not apply
+					<emphasis>expires_range</emphasis> or 
+					<emphasis>default_expires_range</emphasis> to this
+					registration.
+					</para>
 				</listitem>
 			</itemizedlist>
 			<para>The flags may be given in decimal or hexa format.</para>
